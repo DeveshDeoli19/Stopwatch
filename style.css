@@ -1,0 +1,92 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: #222;
+    width: 40%;
+    min-width: 500px;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+h1{
+    text-align: center;
+    color:white;
+    margin-bottom: 1em;
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+.timer-display{
+    position: relative;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    background: linear-gradient(-135deg,#0048ce,#008bfd);
+    width: 120%;
+    left:-10%;
+    padding: 1em 0;
+    border-radius: 10px;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+.buttons{
+    margin :2em ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0.1em 0.5em;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+    letter-spacing: 2px;
+}
+
+
+
+button:hover{
+    background:teal;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+@media (max-width:890px){
+
+    .container{
+        width: 100%;
+        overflow:scroll;
+    }
+
+    h1{
+        margin-bottom: 0.3em;
+    }
+
+    .timer-display{
+        width:100%;
+      left:6%;
+    }
+    .buttons{
+    flex-direction: column;
+    }
+
+    button{
+        margin: 0.5em;
+    }
+}
